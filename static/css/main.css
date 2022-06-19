@@ -1,0 +1,168 @@
+header h2 {
+  display: inline-block;
+  width: fit-content;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 15px;
+}
+header nav {
+  width: fit-content;
+  vertical-align: middle;
+  position: relative;
+  float: right;
+  top: 5px;
+}
+header nav a {
+  color: inherit;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-decoration: none;
+}
+header a {
+  color: inherit;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #181818;
+  color: white;
+}
+footer {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body main {
+  min-height: calc(100vh - 240px);
+}
+footer div {
+  margin: 30px 0 0 0;
+  font-family: sans-serif;
+}
+footer > div:first-child {
+  font-family: monospace;
+}
+footer div nav a {
+  padding: 30px;
+  box-sizing: border-box;
+  font-weight: bold;
+  display: inline-block;
+}
+header svg {
+  width: 48px;
+  float: right;
+  vertical-align: middle;
+  display: none;
+  position: relative;
+  bottom: 13px;
+  cursor: pointer;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+.backdrop svg {
+  width: 48px;
+  z-index: 1;
+  top: 30px;
+  right: 30px;
+  display: block;
+  pointer-events: none;
+}
+.mobileMenu {
+  background-color: #181818;
+  width: 100%;
+  height: 100vh;
+  max-width: 400px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+}
+.mobileMenu nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  display: block;
+}
+.mobileMenu a {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+header .wrapper {
+  max-width: 1366px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+footer div a {
+  color: inherit;
+}
+.articleCard {
+  display: inline-block;
+  border-radius: 26px;
+  padding: 35px;
+  box-sizing: border-box;
+  background-color: #ededed;
+  margin: 10px;
+  width: calc(33% - 25px);
+  min-height: 223px;
+  vertical-align: top;
+  text-align: left;
+  box-shadow: 0 4px 9px 0 #a9a9a9;
+}
+.articleCard h2 {
+  font-family: "Open Sans", sans-serif;
+}
+main {
+  margin: auto;
+  max-width: 1366px;
+}
+main section a {
+  color: inherit;
+  text-decoration: none;
+  width: fit-content;
+}
+.articleCard .sample {
+  display: block;
+  max-height: 80px;
+  overflow: hidden;
+  font-family: "PT Sans", sans-serif;
+  color: #626262;
+}
+section.articles {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .articleCard {
+    width: calc(100% - 20px);
+  }
+  header svg {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+}
