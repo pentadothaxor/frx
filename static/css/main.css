@@ -125,7 +125,7 @@ footer div a {
   border-radius: 26px;
   padding: 35px;
   box-sizing: border-box;
-  background-color: #ededed;
+  background-color: #f5f5f7;
   margin: 10px;
   width: calc(33% - 25px);
   min-height: 223px;
@@ -139,6 +139,8 @@ footer div a {
 main {
   margin: auto;
   max-width: 1366px;
+  padding: 35px;
+  box-sizing: border-box;
 }
 main section a {
   color: inherit;
@@ -152,8 +154,44 @@ main section a {
   font-family: "PT Sans", sans-serif;
   color: #626262;
 }
+main h1 {
+  font-family: sans-serif;
+}
 section.articles {
   text-align: center;
+}
+article {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+article h1 {
+  text-indent: 25px;
+}
+article h2,
+article p {
+  text-indent: 15px;
+}
+article img {
+  width: 100%;
+}
+.gotobutton {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  color: black;
+  font-family: sans-serif;
+  padding: 10px 25px;
+  background: linear-gradient(45deg, #fc4a1a, #f7b733);
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+  display: inline-block;
+  border-radius: 5px;
 }
 @media (max-width: 600px) {
   .articleCard {
